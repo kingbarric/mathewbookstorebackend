@@ -4,11 +4,13 @@ import com.mathew.bookstore.mathewbookstore.model.Books;
 import com.mathew.bookstore.mathewbookstore.services.BookService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
+import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
 
-@RequestMapping("bookstore/")
+@Controller
+@RequestMapping("/bookstore")
 public class BookController {
     @Autowired
     BookService bookService;
