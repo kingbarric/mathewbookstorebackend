@@ -134,7 +134,7 @@ public class BooksServiceImplementation implements BookService {
 
         sql +=" category ='"+search.getCategory()+"' ";
 
-        sql +=" OR publisher ='"+search.getAuthor()+"' ";
+        sql +=" OR author ='"+search.getAuthor()+"' ";
         if(!StringUtils.isEmpty(search.getLowPrice()) && !StringUtils.isEmpty(search.getHighPrice()) ){
             sql +=" OR   price BETWEEN  "+search.getLowPrice()+"  AND "+search.getHighPrice()+" ";
         }
